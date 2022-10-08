@@ -8,6 +8,7 @@ header, main, footer {
     border-bottom: 2px solid rgba(219, 219, 219, 0.3);
     margin: auto;
     max-width: 1604px;
+    padding: 1em;
 }
 
 /*-----------------------------------------*/
@@ -24,6 +25,7 @@ nav a {
     font-size: 1.1em;
     text-decoration: none;
 }
+
 .btnMore {
     background-color: white;
     border: none;
@@ -49,12 +51,18 @@ nav a {
     display: none;
 }
 
-.more-gride-menu-1 {
+.more-flex-menu-1 {
+    margin: 1em 0 2em 0px;
+    display: flex;
+    gap: 2.5em;
+}
+
+.more-flex-menu-2 {
     display: grid;
 }
 
-.more-gride-menu-2 {
-    display: grid;
+.item-grid {
+    font-weight: normal;
 }
 
 @media screen and (max-width: 1604px) {
