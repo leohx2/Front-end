@@ -26,13 +26,7 @@ nav a {
     text-decoration: none;
 }
 
-.btnMore {
-    background-color: white;
-    border: none;
-    color:rgb(255, 140, 0);
-    font-weight: bold;
-    font-size: 1.1em;
-}
+
 .container-fluid-nav {
     align-content: center;
     align-items: flex-start;
@@ -42,6 +36,15 @@ nav a {
     min-height: 49px;
     padding-top: 10px;
 }
+
+.btnMore {
+    background-color: white;
+    border: none;
+    color:rgb(255, 140, 0);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 .link-navbar-right {
     color: rgba(0, 0, 255, 0.7);
     margin-left: auto;
@@ -49,6 +52,7 @@ nav a {
 
 .menu-more {
     display: none;
+    margin-top: 1em;
 }
 
 .more-flex-menu-1 {
