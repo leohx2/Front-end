@@ -62,6 +62,7 @@ nav a:hover{
     display: block;
 }
 
+
 .menu-more[open] .sub-tittle-flex1 {
     animation: menuMore 0.2s ease-in forwards;
 }
@@ -85,6 +86,20 @@ nav a:hover{
     }
     100% {
         opacity: 1;
+    }
+}
+
+.menu-more[closed] {
+    animation: menuMoreClosing 0.2s ease-in forwards;
+}
+
+@keyframes menuMoreClosing {
+    0% {
+        opacity: 1;
+        
+    }
+    100% {
+        opacity: 0;
     }
 }
 
