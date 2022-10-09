@@ -60,38 +60,48 @@ nav a:hover{
 
 .menu-more[open]{
     display: block;
+    
 }
-
 
 .menu-more[open] .sub-tittle-flex1 {
     animation: menuMore 0.2s ease-in forwards;
+    transform-origin: top center;
 }
 
 .menu-more[open] .more-flex-menu-1 {
     animation: menuMore 0.2s 0.1s ease-in forwards;
+    transform-origin: top center;
 }
 
 .menu-more[open] .sub-tittle-flex2 {
     animation: menuMore 0.2s 0.3s ease-in forwards;
+    transform-origin: top center;
 }
 
 .menu-more[open] .more-flex-menu-2 {
     animation: menuMore 0.2s 0.5s ease-in forwards;
+    transform-origin: top center;
 }
 
 @keyframes menuMore {
     0% {
         opacity: 0;
+        transform: rotateX(-90deg);
         
+    }
+    80%{
+        transform: rotateX(30deg);
     }
     100% {
         opacity: 1;
+        transform: rotateX(0deg);
     }
 }
 
-.menu-more[closed] {
+.menu-more[closed]{
     animation: menuMoreClosing 0.2s ease-in forwards;
 }
+
 
 @keyframes menuMoreClosing {
     0% {
