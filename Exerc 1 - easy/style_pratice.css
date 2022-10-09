@@ -62,15 +62,48 @@ nav a:hover{
     display: block;
 }
 
+.menu-more[open] .sub-tittle-flex1 {
+    animation: menuMore 0.2s ease-in forwards;
+}
+
+.menu-more[open] .more-flex-menu-1 {
+    animation: menuMore 0.2s 0.1s ease-in forwards;
+}
+
+.menu-more[open] .sub-tittle-flex2 {
+    animation: menuMore 0.2s 0.3s ease-in forwards;
+}
+
+.menu-more[open] .more-flex-menu-2 {
+    animation: menuMore 0.2s 0.5s ease-in forwards;
+}
+
+@keyframes menuMore {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .more-flex-menu-1 {
+    opacity: 0;
     display: flex;
     gap: 1.5em;
 }
-.sub-tittle-grid2{
+.sub-tittle-flex1{
+    opacity: 0;
+}
+
+.sub-tittle-flex2{
+    opacity: 0;
     margin-top: 1.5em;
 }
 .more-flex-menu-2 {
     display: flex;
+    opacity: 0;
     flex: 1;
     gap: 1em;
 }
