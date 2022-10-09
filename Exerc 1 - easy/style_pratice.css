@@ -6,7 +6,7 @@ body {
 header, main, footer {
     background-color: white;
     border-bottom: 2px solid rgba(219, 219, 219, 0.3);
-    margin: auto;
+    margin-inline: auto;
     max-width: 1604px;
     padding: 1em;
 }
@@ -21,17 +21,19 @@ nav {
 }
 nav a {
     color: inherit;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.1em;
     text-decoration: none;
 }
-
+nav a:hover{
+    color: inherit;
+}
 
 .container-fluid-nav {
     align-content: center;
     align-items: flex-start;
     display: flex;
-    gap: 2.2em;
+    gap: 1.5em;
     justify-content: left;
     min-height: 49px;
     padding-top: 10px;
@@ -40,33 +42,49 @@ nav a {
 .btnMore {
     background-color: white;
     border: none;
-    color:rgb(255, 140, 0);
+    color:#FF764D;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-.link-navbar-right {
-    color: rgba(0, 0, 255, 0.7);
+.container-fluid-nav .link-navbar-right {
+    color: rgba(0, 0, 255, 1);
     margin-left: auto;
 }
 
 .menu-more {
     display: none;
-    margin-top: 1em;
+    margin-top: 2em;
+    padding-bottom: 2.5em;
+}
+
+.menu-more[open]{
+    display: block;
 }
 
 .more-flex-menu-1 {
-    margin: 1em 0 2em 0px;
     display: flex;
-    gap: 2.5em;
+    gap: 1.5em;
 }
-
+.sub-tittle-grid2{
+    margin-top: 1.5em;
+}
 .more-flex-menu-2 {
-    display: grid;
+    display: flex;
+    flex: 1;
+    gap: 1em;
+}
+.more-flex-menu-2 span{
+    font-weight: 600;
 }
 
 .item-grid {
+    margin-top: 0.5em;
     font-weight: normal;
+}
+
+.item-grid.orange{
+   color: #FF764D; 
 }
 
 @media screen and (max-width: 1604px) {
