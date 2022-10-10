@@ -2,6 +2,7 @@
 body {
     background-color: rgba(219, 219, 219, 0.3) !important;
     padding-bottom: 1px;
+    --nav--height: 50px;
 }
 header, main, footer {
     background-color: white;
@@ -141,8 +142,33 @@ nav a:hover{
     font-weight: normal;
 }
 
-.item-grid.orange{
+.orange{
    color: #FF764D; 
+}
+/*main style*/
+
+.menuScrollFlex {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    gap: 2em;
+    height: var(--nav--height);
+    transition: 0.2s ease-in;
+    transform-origin: top;
+    position: fixed;
+    width: 100%;
+}
+
+.menuScrollFlex a{
+    font-size: 0.9em;
+}
+
+.menuScrollFlex[up] {
+    transform: translateY(-50px);
+}
+
+main pre {
+    margin-top: var(--nav--height);
 }
 
 @media screen and (max-width: 1604px) {
