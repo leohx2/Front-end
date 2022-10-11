@@ -2,7 +2,7 @@
 body {
     background-color: rgba(219, 219, 219, 0.3) !important;
     padding-bottom: 1px;
-    --nav--height: 50px;
+    --nav--height: 60px;
 }
 header, main, footer {
     background-color: white;
@@ -115,9 +115,9 @@ nav a:hover{
 }
 
 .more-flex-menu-1 {
-    opacity: 0;
     display: flex;
     gap: 1.5em;
+    opacity: 0;
 }
 .sub-tittle-flex1{
     opacity: 0;
@@ -129,17 +129,17 @@ nav a:hover{
 }
 .more-flex-menu-2 {
     display: flex;
-    opacity: 0;
     flex: 1;
     gap: 1em;
+    opacity: 0;
 }
 .more-flex-menu-2 span{
     font-weight: 600;
 }
 
 .item-grid {
-    margin-top: 0.5em;
     font-weight: normal;
+    margin-top: 0.5em;
 }
 
 .orange{
@@ -147,15 +147,18 @@ nav a:hover{
 }
 /*main style*/
 
+main {
+    padding: 0;
+}
+
 .menuScrollFlex {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     gap: 2em;
     height: var(--nav--height);
-    transition: 0.2s ease-in;
+    transition: 0.30s ease-in-out;
     transform-origin: top;
-    position: fixed;
     width: 100%;
 }
 
@@ -164,11 +167,72 @@ nav a:hover{
 }
 
 .menuScrollFlex[up] {
-    transform: translateY(-50px);
+    position: fixed;
+    top: 0;
+    transform: translateY(0);
 }
 
-main pre {
-    margin-top: var(--nav--height);
+.menuScrollFlex[down] {
+    transform: translateY(calc(-1 * var(--nav--height)));
+}
+
+.mainBody[up] {
+    margin-top: 44px;
+}
+
+.img1 {
+    align-items: center;
+    background-color:rgba(0, 0, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 160px);/*160px ==  the size of navMeu + NavBar */
+    margin: auto;
+    width: calc(100% - 240px);/* margin*/
+}
+
+.textBody1 {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15vh auto 15vh auto;
+    word-break: keep-all;
+    width: 50%;
+    gap: 1em;
+
+}
+
+.textBody1 span{
+    color: blue ;
+}
+
+.bodyImg2and3 {
+    background: linear-gradient(to right, white 42%, #FBFFA7 0%);
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+}
+
+.img2 {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 666px;
+    width: 666px;
+}
+
+.img3 {
+    align-items: center;
+    background-color: rgba(255, 0, 255, 0.33);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 533px;
 }
 
 @media screen and (max-width: 1604px) {
@@ -177,5 +241,15 @@ main pre {
     }
     nav {
         padding: 0px 25px 0px 25px;
+    }
+    .img2 {
+        gap: 8vw;
+        height: 41vw;
+        width: 41vw;
+    }
+    .img3 {
+        gap: 8vw;
+        height: 25vw;
+        width: 33vw;
     }
 }
