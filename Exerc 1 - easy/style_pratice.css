@@ -190,16 +190,15 @@ main {
     width: calc(100% - 240px);/* margin*/
 }
 
-.textBody1 {
+.bodyTextConfig{
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
     justify-content: center;
-    margin: 15vh auto 15vh auto;
+    margin: 18vh auto 15vh auto;
     word-break: keep-all;
     width: 50%;
     gap: 1em;
-
 }
 
 .textBody1 span{
@@ -213,7 +212,9 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 120vh;
+    margin-bottom: 15vh;
 }
+
 
 .img2 {
     align-items: center;
@@ -235,6 +236,19 @@ main {
     width: 533px;
 }
 
+.youtubeVideo {
+    width: 50%;
+    height: 455px;
+    margin-inline: auto;
+    margin-bottom: 16vh;
+    text-align: left;
+}
+
+.smallNote{
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 1604px) {
     header, main, footer {
         width: 100vw;
@@ -251,5 +265,8 @@ main {
         gap: 8vw;
         height: 25vw;
         width: 33vw;
+    }
+    .youtubeVideo{
+        height: calc(100vw / 3.5);
     }
 }
