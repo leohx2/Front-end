@@ -1,4 +1,9 @@
 /*Basic pag layout*/
+::selection{
+    background-color: blue;
+    color: #FFF;
+}
+
 body {
     background-color: rgba(219, 219, 219, 0.3) !important;
     padding-bottom: 1px;
@@ -181,10 +186,7 @@ main {
 }
 
 .img1 {
-    align-items: center;
     background-color:rgba(0, 0, 255, 0.5);
-    display: flex;
-    justify-content: center;
     min-height: calc(100vh - 160px);/*160px ==  the size of navMeu + NavBar */
     margin: auto;
     width: calc(100% - 240px);/* margin*/
@@ -215,23 +217,22 @@ main {
     margin-bottom: 15vh;
 }
 
-
 .img2 {
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    display: flex;
-    justify-content: center;
     height: 666px;
     width: 666px;
 }
 
-.img3 {
+.imgNumberCenter {
     align-items: center;
-    background-color: rgba(255, 0, 255, 0.33);
     color: white;
     display: flex;
     justify-content: center;
+}
+
+.img3 {
+    background-color: rgba(255, 0, 255, 0.33);
     height: 400px;
     width: 533px;
 }
@@ -249,6 +250,35 @@ main {
     font-weight: 600;
 }
 
+.bodyImg4And5And6 {
+    align-items: center;
+    background: linear-gradient(to left, white 42%,#B6FFC0 0%);
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+    width: 100%;
+}
+
+.img4and5 {
+    align-items: center;
+    display: grid;
+    height: 1200px;
+    justify-content: space-between;
+}
+
+.img4, .img5 {
+    background-color: rgba(3, 255, 224, 0.6);
+    height: 400px;
+    width: 533px;
+}
+
+.img6 {
+    background-color: rgba(131, 131, 131, 0.6);
+    height: 666px;
+    margin-left: 133px;
+    width: 666px;
+}
+
 @media screen and (max-width: 1604px) {
     header, main, footer {
         width: 100vw;
@@ -264,9 +294,21 @@ main {
     .img3 {
         gap: 8vw;
         height: 25vw;
-        width: 33vw;
+        width: 33.3vw;
     }
     .youtubeVideo{
         height: calc(100vw / 3.5);
+    }
+    
+    .bodyImg4And5And6, .img4and5{
+        height: 75vw;
+    }
+    .img4, .img5 {
+        height: 25vw;
+        width: 33.3vw;
+    }
+    .img6{
+        height: 41.6vw;
+        width: 41.6vw;
     }
 }
