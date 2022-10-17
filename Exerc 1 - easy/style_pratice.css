@@ -158,13 +158,14 @@ main {
 
 .menuScrollFlex {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     gap: 2em;
     height: var(--nav--height);
     transition: 0.30s ease-in-out;
     transform-origin: top;
     width: 100%;
+    z-index: 2;
 }
 
 .menuScrollFlex a{
@@ -291,7 +292,7 @@ main {
     width: 666px;
 }
 
-.Bodyimg7{
+.bodyimg7{
     align-items: center;
     display: flex;
     justify-content: center;
@@ -304,6 +305,46 @@ main {
     max-width: 100%;
 }
 
+.bodyImg8and9 {
+    display: block;
+    position: relative;
+    padding-top: 133px;
+    padding-bottom: 133px;
+}
+
+.backgroundColorImg8n9{
+    background-color: #D5B3FF;
+    display: block;
+    height: 933.3px;
+    left: 266.6px;
+    position: absolute;
+    top: 0;
+    width: 1066.6px;
+    z-index: 0;
+}
+
+.img8{
+    background-image: url("https://ableton-production.imgix.net/about/photo-6-a.jpg?dpr=1.25&fit=crop&h=400&ixjsv=1.1.3&w=533");
+    display: inline-block;
+    height: 400px;
+    margin-left: 133.3px;
+    position: relative;
+    vertical-align: middle;
+    width: 533.3px;
+    z-index: 1;
+}
+
+.img9{
+    background-image: url("https://ableton-production.imgix.net/about/photo-7.jpg?dpr=1.25&fit=crop&h=667&ixjsv=1.1.3&w=667");
+    display: inline-block;
+    height: 666.6px;
+    margin-left: 265px;
+    position: relative;
+    vertical-align: middle;
+    width: 666.6px;
+    z-index: 1;
+}
+
 @media screen and (max-width: 1604px) {
     header, main, footer {
         width: 100vw;
@@ -314,15 +355,8 @@ main {
     .img1{
         width: calc(100% - 220px)
     }
-    .img2 {
-        gap: 8vw;
-        height: 41vw;
-        width: 41vw;
-    }
-    .img3 {
-        gap: 8vw;
-        height: 25vw;
-        width: 33.3vw;
+    .img2, .img3 {
+        gap: 8.3vw;
     }
     .youtubeVideo{
         height: calc(100vw / 3.5);
@@ -331,15 +365,35 @@ main {
     .bodyImg4And5And6, .img4and5{
         height: 75vw;
     }
-    .img4, .img5 {
+    .img3, .img4, .img5, .img8 {
         height: 25vw;
         width: 33.3vw;
     }
-    .img6{
+    .img2, .img6, .img9{
         height: 41.6vw;
         width: 41.6vw;
     }
-    .Bodyimg7{
+    .bodyimg7{
         margin-inline: 8.3vw;
+    }
+
+    .bodyImg8and9 {
+        padding-top: 8.33vw;
+        padding-bottom: 8.33vw;
+    }
+
+    .img8{
+        margin-left: 8.33vw;
+    }
+    .img9 {
+        margin-left: 16vw
+    }
+    .backgroundColorImg8n9{
+        height: 58.33vw;
+        width: 66.6vw;
+    }
+
+    .backgroundColorImg8n9 {
+        left: 16.6vw;
     }
 }
