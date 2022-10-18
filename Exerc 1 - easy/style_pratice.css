@@ -389,13 +389,13 @@ main {
 .footer-main{
     width: 100%;
     padding: 0;
-    font-size: 1.25rem;
 }
 
 .footer-container{
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.85fr 0.85fr 1.3fr;
+    column-gap: 4em;
     row-gap: 4em;
 }
 
@@ -410,6 +410,30 @@ main {
 
 .nopadding {
     padding: 0 0 0 0;
+}
+
+.emailSignup {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.emailDiv {
+    width: 80%;
+}
+
+#email{
+    background-color: rgba(219, 219, 219, 0.3);
+    border: none;
+    padding: 0.4em 0.75em;
+    width: 100%;
+}
+
+.button-submit {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 0.4em 0.75em;
 }
 
 @media screen and (max-width: 1604px) {
