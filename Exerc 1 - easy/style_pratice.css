@@ -35,6 +35,20 @@ nav a:hover{
     color: inherit;
 }
 
+
+.linkNoDecoration {
+    text-decoration: none;
+    color: inherit;
+}
+
+.linkNoDecoration:hover{
+    color: inherit;
+}
+
+.smaller{
+    font-size: 0.6em;
+}
+
 .container-fluid-nav {
     align-content: center;
     align-items: flex-start;
@@ -214,8 +228,7 @@ main {
     width: 50%;
     gap: 1em;
 }
-
-.textBody1 span{
+.spanBlue{
     color: blue ;
 }
 
@@ -345,6 +358,60 @@ main {
     z-index: 1;
 }
 
+.imgPlusText-flex {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+}
+.img10 {
+    background-image: url("https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&dpr=1.25&fit=crop&h=640&ixjsv=1.1.3&w=640");
+    height: 666.67px;
+    width: 666.67px;
+}
+.textBody7{
+    align-items: center;
+    background-color: #B1C5FF;
+    display: flex;
+    height: 666.67px;
+    justify-content: center;
+    width: 666.67px;
+}
+
+.stayBlue:hover{
+    color: blue;
+}
+.body7Center{
+    width: 60%;
+}
+
+/*FOOTER: */
+.footer-main{
+    width: 100%;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+.footer-container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4em;
+}
+
+.logoFooter{
+    width: 188px;
+    grid-column: 1 / -1;
+}
+
+.li-strong{
+    font-weight: 600;
+}
+
+.nopadding {
+    padding: 0 0 0 0;
+}
+
 @media screen and (max-width: 1604px) {
     header, main, footer {
         width: 100vw;
@@ -395,5 +462,16 @@ main {
 
     .backgroundColorImg8n9 {
         left: 16.6vw;
+    }
+    .imgPlusText-flex {
+        padding-bottom: 8.3vw;
+    }
+    .img10, .textBody7{
+        height: 41.66vw;
+        width: 41.66vw;
+    }
+    .footer-container{
+        padding-inline: 8.33vw;
+        padding-top: 8.33vw;
     }
 }
